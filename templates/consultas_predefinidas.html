@@ -1,0 +1,318 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas predefinidas</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+</head>
+<body>
+    <section class="section">
+        <a href="/">
+            <button class="button is-dark mb-4">
+                Volver a inicio
+            </button>
+        </a>
+
+        <h1 class="title has-text-centered">Consultas predefinidas</h1>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <a name="q1"></a>
+                    <h3 class="subtitle">1. Muestre todos los restaurantes que ofrezcan un plato específico (string) ingresado y que esté disponible</h3>
+                    <form action="/1" method="post">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <input class="input" type="text" name="plato" placeholder="Ingresar un plato" autocomplete="off" required>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" type="submit">
+                                    Ejecutar
+                                </button>
+                            </p>
+                            <p class="control">
+                                <a href="/consultas_predefinidas" class="button is-danger">
+                                    Vaciar
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <a name="q2"></a>
+                    <h3 class="subtitle">2. Muestre todos los pedidos de un usuario específico ingresado (email string) y su gasto mensual</h3>
+                    <form action="/2" method="post">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <input class="input" type="text" name="email" placeholder="Ingrese un email" autocomplete="off" required>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" type="submit">
+                                    Ejecutar
+                                </button>
+                            </p>
+                            <p class="control">
+                                <a href="/consultas_predefinidas" class="button is-danger">
+                                    Vaciar
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <div class="columns">
+                        <div class="column">
+
+                            <a name="q3"></a>
+                            <h3 class="subtitle">
+                                3. Muestre todos los pedidos concretados y cancelados y el valor total de ellos
+                            </h3>
+                        </div>
+
+                        <div class="column">
+                            <form action="/3" method="post">
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <button class="button is-success" type="submit">
+                                            Ejecutar
+                                        </button>
+                                    </p>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <a name="q4"></a>
+                    <h3 class="subtitle">
+                        4. Dado un estilo de plato ingresado por el usuario (string), 
+                        muestre todas los platos con ese tipo, los restaurantes que las ofrecen 
+                        y las opciones de delivery
+                    </h3>
+                    <form action="/4" method="post">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <input class="input" type="text" name="estilo" placeholder="Ingresar un estilo" autocomplete="off" required>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" type="submit">
+                                    Ejecutar
+                                </button>
+                            </p>
+                            <p class="control">
+                                <a href="/consultas_predefinidas" class="button is-danger">
+                                    Vaciar
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <a name="q5"></a>
+                    <h3 class="subtitle">
+                        5. Dado un estilo de plato ingresado por el usuario (string), 
+                        muestre todas los platos que pertenezcan a ese estilo y sus restricciones
+                    </h3>
+                    <form action="/5" method="post">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <input class="input" type="text" name="estilo" placeholder="Ingresar un estilo" autocomplete="off" required>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" type="submit">
+                                    Ejecutar
+                                </button>
+                            </p>
+                            <p class="control">
+                                <a href="/consultas_predefinidas" class="button is-danger">
+                                    Vaciar
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <a name="q6"></a>
+                    <h3 class="subtitle">
+                        6. Dado un cliente ingresado por el usuario (email string), 
+                        muestre todas las restaurantes a las que tiene acceso con sus suscripciones
+                    </h3>
+                    <form action="/6" method="post">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <input class="input" type="text" name="email" placeholder="Ingresar email" autocomplete="off" required>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" type="submit">
+                                    Ejecutar
+                                </button>
+                            </p>
+                            <p class="control">
+                                <a href="/consultas_predefinidas" class="button is-danger">
+                                    Vaciar
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <div class="columns">
+                        <div class="column">
+                            <a name="q7"></a>
+                            <h3 class="subtitle">
+                                7. Muestre la suma de dinero gastada por cada cliente en pedidos 
+                                no incluidos en planes de suscripción
+                            </h3>
+                        </div>
+                        <div class="column">
+                            <form action="/7" method="post">
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <button class="button is-success" type="submit">
+                                            Ejecutar
+                                        </button>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <a id="q8"></a>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <div class="columns">
+                        <div class="column">
+                            <a name="q8"></a>
+                            <h3 class="subtitle">
+                                8. Muestre todos los platos y los restaurantes que los ofrecen
+                            </h3>
+                        </div>
+                        <div class="column">
+                            <form action="/8" method="post">
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <button class="button is-success" type="submit">
+                                            Ejecutar
+                                        </button>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <a name="q9"></a>
+                    <h3 class="subtitle">
+                        9. Dado un número (1-5) ingresado por el usuario, muestre todas las evaluaciones de
+                        Clientes, Delivery, Despachador superiores o iguales a él
+                    </h3>
+                    <form action="/9" method="post">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <input class="input" type="text" name="email" placeholder="Ingresar un número" autocomplete="off" required>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" type="submit">
+                                    Ejecutar
+                                </button>
+                            </p>
+                            <p class="control">
+                                <a href="/consultas_predefinidas" class="button is-danger">
+                                    Vaciar
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <a name="consulta10"></a>
+                    <h3 class="subtitle">
+                        10. Dado un alergeno ingresado por el usuario (string), muestre todos los platos que lo
+                        contengan en sus ingredientes
+                    </h3>
+                    <form action="/10" method="post">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <input class="input" type="text" name="alergeno" placeholder="Ingresar alérgeno" autocomplete="off" required>
+                            </p>
+                            <p class="control">
+                                <button class="button is-success" type="submit">
+                                    Ejecutar
+                                </button>
+                            </p>
+                            <p class="control">
+                                <a href="/consultas_predefinidas" class="button is-danger">
+                                    Vaciar
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

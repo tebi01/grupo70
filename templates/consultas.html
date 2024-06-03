@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+</head>
+<body>
+    <section class="section">
+        <a href="/">
+            <button class="button is-dark mb-4">
+                Volver a inicio
+            </button>
+        </a>
+        <h1 class="title has-text-centered">Consultas</h1>
+
+        <div class="columns">
+            <div class="column is-fullwidth">
+                <div class="box">
+                    <form action="/consultas" method="post">
+                        <div>
+                            <h3 class="subtitle mb-2">
+                                Ingresar una consulta
+                            </h3>
+                            
+                        </div>
+                        <div>
+                            <h3 class="subtitle mb-2">
+                                SELECT
+                            </h3>
+                            <p class="control is-expanded">
+                                <input class="input" type="text" name="attributes" placeholder="Ingresar columnas" value="" autocomplete="off" required>
+                            </p>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="subtitle mb-2">
+                                FROM
+                            </h3>
+                            <p class="control is-expanded">
+                                <input class="input" type="text" name="table" placeholder="Ingresar tablas" value="" autocomplete="off" required>
+                            </p>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="subtitle mb-2">
+                                WHERE
+                            </h3>
+                            <p class="control is-expanded">
+                                <input class="input" type="text" name="conditions" placeholder="Ingresar condiciones" value="" autocomplete="off">
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <p class="control is-fullwidth">
+                                <button class="button is-success" type="submit">
+                                    Ejecutar
+                                </button>
+                            </p>
+                        </div>
+                    </form>
+                    <div class="mt-4">
+                        <p class="control">
+                            <a href="/consultas">
+                                <button class="button is-danger">
+                                    Vaciar
+                                </button>
+                            </a>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -21,25 +21,32 @@
                 Seleccione una opción:
             </p>
         </div>
-        <div class="box">
+        <div class="box center-box">
+            
             <h2 class="subtitle has-text-weight-bold mb-3">Opciones</h2>
             <a href="/consultas_predefinidas">
                 <button class="button is-success">
-                    <span class="icon mr-1">
-                        <i class="fa fa-search"></i>
-                    </span>
                     Consultas predefinidas
                 </button>
             </a>
             <a href="/consultas">
                 <button class="button is-success">
-                    <span class="icon mr-1">
-                        <i class="fa fa-search"></i>
-                    </span>
                     Consultas
                 </button>
             </a>
         </div>
+        <style>
+                .center-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                .center-box button {
+    margin: 10px; 
+    }
+            </style>
     </section>
 </body>
 </html>
